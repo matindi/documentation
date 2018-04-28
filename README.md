@@ -59,14 +59,22 @@ A git repository contains, among other things, the following:
    - This stages all the changes made to the entire directory before pushing them to the repository.If we run ‘git status’ again ,we get the following output : 
 13. Running `git status` again, you'll be able to see that the new files have been staged.
 12. `git commit -m "initial commit"`  
-
+ - After multiple file and directory additions, the number of objects git will store will increase. 
 ## The object database
-![object](https://github.com/matindi/documentation/blob/master/branches2.png)
-A branch in git is a pointer to a commit.
+![object](https://github.com/matindi/documentation/blob/master/banks.png)
+
+ - NB : The text in brackets below refers to objects. 
+ - In the image above, we can start with (1177). Our first commit be4d points to the root of our project. 
+ - Commit (bed4) then then contains the list directory and the banks.txt file.
+ - Bank.txt then contains text ie. Anz(2399) while the directory/tree list, contains anz.txt(3ee7)
+ - Anz.txt contains some text(361a)
+
+## Branches
+A branch in git is a pointer to a commit. It contains 
 ![branch](https://github.com/matindi/documentation/blob/master/finalBranch1.png)
 A head is a pointer to our current branch.
 1. Run `git branch`. - This should output master. The master branch is our current branch
  - The list of branches is stored in the `.git/refs/heads` directory.
 2. Run `cat .git/refs/heads/master `
- - The output will be `ecd06be7b154715d762aaddf1241f580c6d6339d`. As noted earlier, a branch is a pointer to a commit and our master branch currently points to the commit above.
+ - The output will be `ecd06be7b154715d762aaddf1241f580c6d6339d`. As noted earlier, a branch is a pointer to a commit and our   master branch currently points to the commit above.
  
