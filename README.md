@@ -78,4 +78,16 @@ A head is a pointer to our current branch.
  - The list of branches is stored in the `.git/refs/heads` directory.
 2. Run `cat .git/refs/heads/master `
  - The output will be `ecd06be7b154715d762aaddf1241f580c6d6339d`. As noted earlier, a branch is a pointer to a commit and our   master branch currently points to the commit above.
- 
+  - To create a new branch, run the command `git branch development`
+  - To change the branch that you're currently working on and switch to another one eg. from master branch to development branch, run the command `git checkout development`.
+   - A common way to use Git branching is to maintain one “main” or “trunk” branch and create new branches to implement new features. Often the default Git branch, master, is used as the main branch.
+   - So, in the example above, it may have been better to leave master at (B), where the paper was submitted to the reviewers. You could then start a new branch to store changes regarding new data.
+   - Ideally, in this pattern, the master branch is always in a releaseable state. Other branches will contain half-finished work, new features, and so on.
+   
+## Merging
+ - After you have finished implementing a new feature on a branch, you want to bring that new feature into the main branch, so that everyone can use it. You can do so with the git merge or git pull command.
+  - The syntax for the commands is as follows:
+    - `git merge master` OR `git pull master` if you were in the development branch and wanted to sync with the master branch.
+     -  Git can get very confused if there are uncommitted changes in the files when you ask it to perform a merge. So make sure to commit whatever changes you have made so far before you merge.
+     - A conflict arises if the commit to be merged in has a change in one place, and the current commit has a change in the same place. Git has no way of telling which change should take precedence.
+     - To resolve the commit, edit the files to fix the conflicting changes. Then run git add to add the resolved files, and run git commit to commit the repaired merge. Git remembers that you were in the middle of a merge, so it sets the parents of the commit correctly. 
