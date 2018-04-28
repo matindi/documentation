@@ -54,8 +54,8 @@ The repository is stored in files alongside the project. There is no central ser
    - This stage all the changes made to the entire directory before pushing them to the repository.If we run ‘git status’ again ,we get the following output : 
 13. Running `git status` again, you'll be able to see that the new files have been staged.
 12. `git commit -m "initial commit"`  
-(https://github.com/matindi/documentation/blob/master/branches2.png)
-A branch in git is a pointer to a commit.(https://github.com/matindi/documentation/blob/master/finalBranch1.png)
+![object](https://github.com/matindi/documentation/blob/master/branches2.png)
+A branch in git is a pointer to a commit.![branch](https://github.com/matindi/documentation/blob/master/finalBranch1.png)
 A head is a pointer to our current branch.
 1. Run `git branch`. - This should output master. The master branch is our current branch
  - The list of branches is stored in the `.git/refs/heads` directory.
