@@ -7,15 +7,23 @@ work on those files among multiple people.
  - Map - because it consists of a key value pair composed of : 
   - A blob of data. -- piece of content.(emphasize)
     A SHA1 representation of that blob of data.	(https://en.wikipedia.org/wiki/SHA-1)
-Show an image of the table of the key value pair.
-Git init and write object to git.
-Define an object : the sha1 rep and the content.
-(add the photo/representation of the object on the file system)
-
-
-#Example1
+    
+    | Key         | Value                                    |
+    |-------------|------------------------------------------|
+    | Hello World | 557db03de997c86a4a028e1ebd3a1ceb225be238 |
+- To view the practical representation of the above explanition, run the following commands : 
 1. `mkdir example` 
 2. `cd example`
 3. `git init`
 4. `echo "Hello World" | git hash-object --stdin -w`
-5. 
+  - This will create a 'hello world' object that will be stored inside the hidden .git 
+5. Run `ls -a` to view all folders and files in your directory. You should be able to see a hidden .git folder
+6. `tree -a`
+  - This commands helps you view all the files and folders contained in your current working directory.
+  - As you can see, an object representation of "Hello World" is stored in the objects folder. The initial 2 letters of the hash are used as the folder name. While the rest of the letters in the has are used as the object's name.
+
+
+Define an object : the sha1 rep and the content.
+(add the photo/representation of the object on the file system)
+
+
