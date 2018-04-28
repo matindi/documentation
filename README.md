@@ -1,5 +1,4 @@
-# documentation
-## GIT
+# GIT
 - Git is a version control system for tracking changes in computer files and coordinating
 work on those files among multiple people.
 - At its core, it’s a key-value pair of sha1 and its corresponding content blob.
