@@ -63,6 +63,7 @@ A git repository contains, among other things, the following:
 ## The object database
 ![object](https://github.com/matindi/documentation/blob/master/banks.png)
 
+ - The diagram above is a pictorial representation of the object database. This shows us how the various ojects stored by git are linked to each other. 
  - NB : The text in brackets below refers to objects. 
  - In the image above, we can start with (1177). Our first commit be4d points to the root of our project. 
  - Commit (bed4) then then contains the list directory and the banks.txt file.
