@@ -12,6 +12,9 @@ work on those files among multiple people.
     |-------------|------------------------------------------|
     | Hello World | 557db03de997c86a4a028e1ebd3a1ceb225be238 |
  - An object in git is a key value pair of SHA1 and their corresponding immutable blobs.Step 6 above shows us a the "hello world" object.
+  There are 4 types of objects in git : 
+  1. commit
+  2. Tags
 (add the photo/representation of the object on the file system)
 1. `mkdir example` 
 2. `cd example`
@@ -22,8 +25,16 @@ work on those files among multiple people.
 6. `tree -a`
   - This commands helps you view all the files and folders contained in your current working directory.
   - As you can see, an object representation of "Hello World" is stored in the objects folder. The initial 2 letters of the hash are used as the folder name. While the rest of the letters in the has are used as the object's name.
+  
 
-
-
-
-
+1. `mkdir banks`
+2. `cd banks`
+3. `git init`
+4. `echo "ANZ" > banks.txt`
+5. `mkdir list`
+8. `cd list`
+9. `echo "webisite : https://www.anz.com.au/personal/" > anz.txt`
+10. `cd ..`
+11. `git add banks.txt`
+ - `git add list/anz.txt`
+12. `git commit -m "initial commit"`  
