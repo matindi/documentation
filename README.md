@@ -3,6 +3,8 @@
 - Git is a version control system for tracking changes in computer files and coordinating
 work on those files among multiple people.
 - At its core, it’s a key-value pair of sha1 and its corresponding content blob.
+  - SHA1 - 
+![SHA1](https://github.com/matindi/documentation/blob/master/sha1.png)
   - Persistent - because the files are stored on the file system. 
   - Map - because it consists of a key value pair composed of : 
     - A blob of data. -- piece of content.(emphasize)
@@ -23,6 +25,7 @@ work on those files among multiple people.
   - This will create a 'hello world' object that will be stored inside the hidden .git 
 5. Run `ls -a` to view all folders and files in your directory. You should be able to see a hidden .git folder
 6. `tree -a`
+  - ![SHA1](https://github.com/matindi/documentation/blob/master/example1.png)
   - This commands helps you view all the files and folders contained in your current working directory.
   - As you can see, an object representation of "Hello World" is stored in the objects folder. The initial 2 letters of the hash are used as the folder name. While the rest of the letters in the has are used as the object's name.
   
