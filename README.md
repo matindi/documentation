@@ -4,7 +4,7 @@ work on those files among multiple people.
 - At its core, it’s a key-value pair of sha1 and its corresponding content blob.
   - SHA1 - 
   
-![SHA1](https://github.com/matindi/documentation/blob/master/sha1Photo.png)
+    ![SHA1](https://github.com/matindi/documentation/blob/master/sha1Photo.png)
   - Persistent - because the files are stored on the file system. 
   - Map - because it consists of a key value pair composed of : 
     - A blob of data. -- piece of content.(eg.text or a file)
@@ -69,8 +69,10 @@ A git repository contains, among other things, the following:
  - Anz.txt contains some text(361a)
 
 ## Branches
-A branch in git is a pointer to a commit. It contains 
+A branch in git is a pointer to a commit.
+
 ![branch](https://github.com/matindi/documentation/blob/master/finalBranch1.png)
+
 A head is a pointer to our current branch.
 1. Run `git branch`. - This should output master. The master branch is our current branch
  - The list of branches is stored in the `.git/refs/heads` directory.
