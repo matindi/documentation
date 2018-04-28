@@ -167,7 +167,7 @@ Here's another way to look at the above:
 
                   |----------------------Tracked----------------------------| 
                   |                                                         |
-Untracked             Unmodified             Modified                Staged 
+`Untracked             Unmodified             Modified                Staged 
     |                      |                     |                     |
     |                      |                     |                     |
     |                      |                     |                     |
@@ -178,10 +178,4 @@ Untracked             Unmodified             Modified                Staged
     |                      |                     |                     |
     |                      |                     |                     |
     |                      |                     |                     |
-    |                      |                     |                     |
- 
-Search …
-
- 
-
-Get $10 free credit when you sign up with DigitalOcean!
+    |                      |                     |                     |`
