@@ -58,7 +58,8 @@ A git repository contains, among other things, the following:
    - This stages all the changes made to the entire directory before pushing them to the repository.If we run ‘git status’ again ,we get the following output : 
 13. Running `git status` again, you'll be able to see that the new files have been staged.
 12. `git commit -m "initial commit"`  
- - After multiple file and directory additions, the number of objects git will store will increase. 
+
+ - After multiple file and directory additions, the number of objects git will store will increase and a complex object database is formed.
 ## The object database
 ![object](https://github.com/matindi/documentation/blob/master/banks.png)
 
